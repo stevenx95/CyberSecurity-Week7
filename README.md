@@ -12,7 +12,7 @@
 
 -Steps to recreate:
    1) Go to the Posts tool in the toolbar and click on "Add New"
-   2) Insert developed code attack as shown in the GIF
+   2) Insert developed code attack, as shown in the GIF, into the body of the page
    3) Press "Update" then "View Post" 
    
 -Affected source code: 
@@ -27,3 +27,34 @@
 -Tested in version: 4.2
 -Fixed in version: 4.2.4
 
+![](example2.gif)
+
+-Steps to recreate:
+   1) Go to the Posts tool in the toolbar and click on "Add New"
+   2) Insert developed code attack, as shown in the GIF, into the body of the page
+   3) Press "Update" then "View Post" 
+   
+-Affected source code: 
+  [Link 1](https://core.trac.wordpress.org/changeset/33549)
+  
+  
+ 3. (Required) Authenticated Shortcode Tags Cross-Site Scripting (XSS)
+ 
+ -Summary: By manipulating unclosed HTML elemtns that are in shortcode tags, an experienced hacker can execute an XSS attack by inserting a certain script insde the tag.
+ 
+-Vulnerability type: XSS
+-Tested in version: 4.2
+-Fixed in version: 4.2.5
+
+ 
+ ![](example3.gif)
+
+-Steps to recreate:
+   1) Go to the Posts tool in the toolbar and click on "Add New"
+   2) Insert developed code attack, as shown in the GIF, into the body of the page
+   3) Press "Update" then "View Post" 
+   
+   -Affected source code: 
+  [Link 1](http://blog.checkpoint.com/2015/09/15/finding-vulnerabilities-in-core-wordpress-a-bug-hunters-trilogy-part-iii-ultimatum/)
+ 
+ 
