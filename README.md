@@ -11,7 +11,9 @@ Time spent: **5** hours spent in total
 -Summary: While using the Youtube URL embed shortcode, we can insert a script inside the youtube url for an XSS attack. The reason why   this works is because the HTML sanitzation function ( wp_kses() ) does not look for escape sequences such as the ones used in the gif, "\x3c". 
 
 -Vulnerability type: XSS
+
 -Tested in version: 4.2
+
 -Fixed in version: 4.2.13
 
 ![](example1.gif)
@@ -30,7 +32,9 @@ Time spent: **5** hours spent in total
 -Summary: This is caused due to a bug from a function (preview_theme()). If you are logged in as an administrator, you can visit one of the site's pages which use a few extra "$get" parameters that results in setting preview_theme_ob_filter as ob_Start callback function. As soon as ob_start() gets all of the pages content it will call preview_theme_ob_filter() to get all the HTML links. This removes the onlick=" event handler from the link tags.
 
 -Vulnerability type: XSS
+
 -Tested in version: 4.2
+
 -Fixed in version: 4.2.4
 
 ![](example2.gif)
@@ -48,10 +52,11 @@ Time spent: **5** hours spent in total
  
  -Summary: By manipulating unclosed HTML elemtns that are in shortcode tags, an experienced hacker can execute an XSS attack by inserting a certain script insde the tag.
  
--Vulnerability type: XSS
--Tested in version: 4.2
--Fixed in version: 4.2.5
+-Vulnerability type: XSS   
 
+-Tested in version: 4.2 
+
+-Fixed in version: 4.2.5
  
  ![](example3.gif)
 
